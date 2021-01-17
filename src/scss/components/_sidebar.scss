@@ -1,0 +1,32 @@
+.sidebar-div{
+  list-style-type: none;
+  margin:20px auto;
+  padding: 0;
+  .sidbar-title{
+    margin: 20px;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,0.6); 
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    border-bottom: 2px solid  #603883 ;
+    text-align: center;
+  }
+  li{ 
+    display: flex;
+    padding: 5px;
+    padding-left: 20px;
+    & a,div{
+      color: #fff;
+      transition: height .3s,color .3s,background-color .3s;
+      -webkit-transition: height .3s,color .3s,background-color .3s;
+      display: block;
+      line-height: 20px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      align-items: center;     
+     
+   }
+   svg{
+    padding:0 10px;
+    }
+  }
+}
