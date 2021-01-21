@@ -10,7 +10,7 @@ const KonvaDemo = () => {
   const imgRef =useRef(null);
   const transFormerRef = useRef(null)
   const [image] = useImage("https://konvajs.github.io/assets/yoda.jpg");
-  //MdCropRotate
+  //MdCropRotate =>icons
   useEffect(()=>{
     setImgProps({x:0,y:0,width:width,height:height})
   },[setImgProps,width,height]);
@@ -73,6 +73,7 @@ const KonvaDemo = () => {
         {isSelected && (
         <Transformer
           ref={transFormerRef}
+          rotateEnabled={false}
           boundBoxFunc={(oldBox, newBox) => {
             // limit resize
             if (newBox.width < 5 || newBox.height < 5) {
