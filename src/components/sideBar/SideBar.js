@@ -35,6 +35,11 @@ const SideBar = () => {
           <NineGridIcon /> konva crop demo
         </NavLink>
       </li>
+      <li className="menu-item">
+        <NavLink to="/datePicker" activeClassName="active">
+          <NineGridIcon /> DateRangePicker
+        </NavLink>
+      </li>
     </ul>
   );
 };

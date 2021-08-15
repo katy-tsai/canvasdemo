@@ -7,6 +7,7 @@ import ReactDnd from "./components/reactdnd/ReactDnd";
 import KonvaDemo from "./components/konva/KonvaDemo";
 import KonvaShapeDemo from "./components/konva/KonvaShapeDemo";
 import konvaCropImg from "./components/konva/KonvaCropImg";
+import DateRangePickerView from './views/DatePickerView';
 function App() {
   return (
     <Layout>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/konva_demo" component={KonvaDemo} />
         <Route path="/konva_shape" component={KonvaShapeDemo} />
         <Route path="/konva_crop" component={konvaCropImg} />
+        <Route path="/datePicker" component={DateRangePickerView} />
       </Switch>
     </Layout>
   );
